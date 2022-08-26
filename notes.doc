@@ -1,0 +1,99 @@
+> results for the extraLongArray = {
+
+insert 1.0407409 s
+append 3.6314 ms
+-----------------------
+insert 1.0317286 s
+append 3.5278 ms
+-----------------------
+insert 10.8132 ms
+append 767.9 μs
+-----------------------
+insert 1.0472116 s
+append 3.5796 ms
+-----------------------
+insert 1.0455571 s
+append 3.7255 ms
+-----------------------
+}
+
+> Results for the largeArray = {
+
+insert 10.7055 ms
+append 760 μs
+-----------------------
+insert 10.6458 ms
+append 773.4 μs
+-----------------------
+insert 10.8043 ms
+append 766.4 μs
+-----------------------
+insert 10.8277 ms
+append 759.4 μs
+-----------------------
+insert 10.8002 ms
+append 772.8 μs
+-----------------------
+}
+
+> Results for the mediumArray = {
+
+insert 228.6 μs
+append 185.5 μs
+-----------------------
+insert 232.5 μs
+append 216.7 μs
+-----------------------
+insert 229.2 μs
+append 185 μs
+-----------------------
+insert 230.4 μs
+append 185.9 μs
+-----------------------
+insert 229.3 μs
+append 185.7 μs
+-----------------------
+}
+
+> Results for the smallArray = {
+
+insert 59.5 μs
+append 125.6 μs
+-----------------------
+insert 63.1 μs
+append 130.2 μs
+-----------------------
+insert 60.9 μs
+append 137.3 μs
+-----------------------
+insert 60.3 μs
+append 130.8 μs
+-----------------------
+insert 60.5 μs
+append 129.9 μs
+-----------------------
+}
+
+> Results for the tinyArray = {
+
+insert 44.8 μs
+append 112.6 μs
+-----------------------
+insert 45.3 μs
+append 111.9 μs
+-----------------------
+insert 46.8 μs
+append 106.3 μs
+-----------------------
+insert 45.4 μs
+append 111.2 μs
+-----------------------
+insert 45.4 μs
+append 109 μs
+-----------------------
+
+}
+
+
+The main differance that most people should be able to see right away is when you change from the extraLongArray to largeArray the times (scale) start changing from doublerInsert seconds to milliseconds and doublerAppend changes from milliseconds to microseconds time equal to one millionth (0.000001 or 10−6 or 1⁄1,000,000) of a second. Once we run the mediumArray, the smallArray, and the tinyArray we only get microseconds in both the doublerInsert and the doublerAppend so we can see that the arrays smaller than largeArray and extraLongArray take less time to run through just based off the SI uni (International System of Units/System of measurement).
+Without looking at the SI units, my computer visually took a good second longer to see the times of largeArray and extraLongArray than it did on mediumArray, smallArray, and tinyArray
